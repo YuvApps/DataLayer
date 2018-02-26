@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w160dp-v13\\values-w160dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\values-w160dp-v13\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "0,0,0,0",
+                        "startOffsets": "222,269,317,367",
+                        "endColumns": "46,47,49,47",
+                        "endOffsets": "268,316,366,414"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,106,158,212",
+                        "endColumns": "50,51,53,51",
+                        "endOffsets": "101,153,207,259"
+                    }
+                }
+            ]
+        }
+    ]
+}
