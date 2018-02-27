@@ -167,8 +167,8 @@ public class MainActivity extends Activity implements
             if (event.getType() == DataEvent.TYPE_CHANGED) {
                 mDataItemListAdapter.add(
                         new Event("DataItem Changed", event.getDataItem().toString()));
-                if(event.getDataItem().getUri().getPath() == CONFO_PATH) {
-                    
+                if(event.getDataItem().getUri().getPath().equals(CONFO_PATH)) {
+                    LOGD(TAG, "Works!");
                 }
             } else if (event.getType() == DataEvent.TYPE_DELETED) {
                 mDataItemListAdapter.add(
