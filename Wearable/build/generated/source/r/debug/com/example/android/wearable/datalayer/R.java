@@ -1407,19 +1407,21 @@ public final class R {
     public static final int backgraund_round=0x7f0e0001;
     public static final int backgroud=0x7f0e0002;
     public static final int backgroud_round=0x7f0e0003;
-    public static final int ic_black_l=0x7f0e0004;
-    public static final int ic_launcher_foreground=0x7f0e0005;
-    public static final int ic_split=0x7f0e0006;
-    public static final int ic_split_l=0x7f0e0007;
-    public static final int ic_split_round=0x7f0e0008;
-    public static final int left=0x7f0e0009;
-    public static final int left_round=0x7f0e000a;
-    public static final int right=0x7f0e000b;
-    public static final int right_round=0x7f0e000c;
-    public static final int split=0x7f0e000d;
-    public static final int split_round=0x7f0e000e;
-    public static final int unite=0x7f0e000f;
-    public static final int unite_round=0x7f0e0010;
+    public static final int force_check=0x7f0e0004;
+    public static final int force_check_round=0x7f0e0005;
+    public static final int ic_black_l=0x7f0e0006;
+    public static final int ic_launcher_foreground=0x7f0e0007;
+    public static final int ic_split=0x7f0e0008;
+    public static final int ic_split_l=0x7f0e0009;
+    public static final int ic_split_round=0x7f0e000a;
+    public static final int left=0x7f0e000b;
+    public static final int left_round=0x7f0e000c;
+    public static final int right=0x7f0e000d;
+    public static final int right_round=0x7f0e000e;
+    public static final int split=0x7f0e000f;
+    public static final int split_round=0x7f0e0010;
+    public static final int unite=0x7f0e0011;
+    public static final int unite_round=0x7f0e0012;
   }
   public static final class plurals {
     public static final int time_difference_short_days=0x7f0f0000;

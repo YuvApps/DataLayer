@@ -23,9 +23,12 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.annotation.WorkerThread;
 import android.util.Log;
@@ -89,9 +92,11 @@ public class MainActivity extends Activity implements
     private static final String CONFO_PATH = "/confo";
     private static final String IMAGE_KEY = "photo";
     private static final String COUNT_KEY = "count";
+    //private static final Handler handler = new Handler();
     public static final int PICK_IMAGE = 2;
 
     private boolean mCameraSupported = false;
+    private boolean forceChecked = false;
 
     private ListView mDataItemList;
     private Button mSendPhotoBtn;
@@ -104,6 +109,33 @@ public class MainActivity extends Activity implements
     // Send DataItems.
     private ScheduledExecutorService mGeneratorExecutor;
     private ScheduledFuture<?> mDataItemGeneratorFuture;
+
+    public boolean setButtonGray() {
+        ((Button)findViewById(R.id.Osher)).setBackgroundColor(Color.parseColor("#808080"));
+        return false;
+    };
+
+    public boolean setButtonRed() {
+        ((Button)findViewById(R.id.Osher)).setBackgroundColor(Color.parseColor("#FF0000"));
+        return true;
+    };
+
+    boolean colorStatus = false;
+
+    CountDownTimer timer = new CountDownTimer(5000, 300) {
+
+        public void onTick(long millisUntilFinished) {
+            if (colorStatus)
+                colorStatus = setButtonGray();
+            else
+                colorStatus = setButtonRed();
+        }
+
+    public void onFinish() {
+        ((Button)findViewById(R.id.Osher)).setBackgroundColor(Color.parseColor("#FF0000"));
+        LOGD(TAG, "לממממממההה");
+    };
+};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -168,6 +200,10 @@ public class MainActivity extends Activity implements
                 mDataItemListAdapter.add(
                         new Event("DataItem Changed", event.getDataItem().toString()));
                 if(event.getDataItem().getUri().getPath().equals(CONFO_PATH)) {
+                    timer.cancel();
+                    ((Button)findViewById(R.id.Osher)).setBackgroundColor(Color.parseColor("#32CD32"));
+                    forceChecked = true;
+
                     LOGD(TAG, "Works!");
                 }
             } else if (event.getType() == DataEvent.TYPE_DELETED) {
@@ -202,6 +238,10 @@ public class MainActivity extends Activity implements
         mStartActivityBtn = findViewById(R.id.start_wearable_activity);
     }
 
+    public void missingSoldierFunc (){
+        ((Button)findViewById(R.id.Osher)).setBackgroundColor(Color.parseColor("#FF0000"));
+    };
+
     public void onTakePhotoClick(View view) {
         dispatchTakePictureIntent();
     }
@@ -222,10 +262,15 @@ public class MainActivity extends Activity implements
     public void onLeftClick(View view) {
         sendCommand(toAsset(), "Left");
     }
+    public void onForceCheckClick(View view) {
+        sendCommand(toAsset(), "Force Check");
+        ((Button)findViewById(R.id.Osher)).setBackgroundColor(Color.parseColor("#808080"));
+       timer.start();
 
-    /**
-     * Sends an RPC to start a fullscreen Activity on the wearable.
-     */
+    }
+
+
+
     public void onStartWearableActivityClick(View view) {
         LOGD(TAG, "Generating RPC");
 

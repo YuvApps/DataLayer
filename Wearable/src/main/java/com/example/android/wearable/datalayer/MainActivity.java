@@ -36,6 +36,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.android.wearable.datalayer.fragments.AssetFragment;
@@ -97,6 +98,8 @@ public class MainActivity extends Activity implements
     private DataFragment mDataFragment;
     private AssetFragment mAssetFragment;
 
+    public String strCommand = "";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,6 +139,9 @@ public class MainActivity extends Activity implements
         PutDataRequest request = dataMap.asPutDataRequest();
         request.setUrgent();
 
+        moveToPage(1);
+        mAssetFragment.setBackgroundImage(BitmapFactory.decodeResource(getResources(), R.mipmap.backgraund_round));
+
         Task<DataItem> dataItemTask = Wearable.getDataClient(this).putDataItem(request);
 
         dataItemTask.addOnSuccessListener(new OnSuccessListener<DataItem>() {
@@ -166,22 +172,23 @@ public class MainActivity extends Activity implements
     public void onDataChanged(DataEventBuffer dataEvents) {
         LOGD(TAG, "onDataChanged(): " + dataEvents);
 
-        moveToPage(1);
-        mAssetFragment.setBackgroundImage(BitmapFactory.decodeResource(getResources(), R.mipmap.backgraund_round));
+        //moveToPage(1);
+        //mAssetFragment.setBackgroundImage(BitmapFactory.decodeResource(getResources(), R.mipmap.backgraund_round));
 
         for (DataEvent event : dataEvents) {
             if (event.getType() == DataEvent.TYPE_CHANGED) {
                 String path = event.getDataItem().getUri().getPath();
                 DataMapItem dataMapItem = DataMapItem.fromDataItem(event.getDataItem());
-                String command = dataMapItem.getDataMap().getString("command");
+                strCommand = dataMapItem.getDataMap().getString("command");
                 //if (DataLayerListenerService.IMAGE_PATH.equals(path)) {
-                if (command != null) {
+                if (strCommand != null) {
                     Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
                     long[] vibrationPattern = {0, 500, 50, 500};
                     long[] vibrationPatternSplit = {0, 600, 200, 600};
                     long[] vibrationPatternUnite = {0, 1000};
                     long[] vibrationPatternRight = {0, 100, 200, 800};
                     long[] vibrationPatternLeft = {0, 800, 200, 100};
+                    long[] vibrationPatternForceCheck = {0, 300, 100, 300, 100, 300, 100, 300};
                     //-1 - don't repeat
                     final int indexInPatternToRepeat = -1;
 
@@ -192,7 +199,7 @@ public class MainActivity extends Activity implements
                     LOGD(TAG, "Setting background image on second page..");
                     moveToPage(1);
 
-                    switch (command){
+                    switch (strCommand){
                         case "Split": {
                             bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.split_round);
                             vibrationPattern = vibrationPatternSplit;
@@ -211,6 +218,11 @@ public class MainActivity extends Activity implements
                         case "Left": {
                             bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.left_round);
                             vibrationPattern = vibrationPatternLeft;
+                            break;
+                        }
+                        case "Force Check": {
+                            bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.force_check_round);
+                            vibrationPattern = vibrationPatternForceCheck;
                             break;
                         }
                     }

@@ -8,6 +8,10 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-v21\\accept_deny_dialog_positive_bg.xml"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_force_check_round.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xxhdpi\\force_check_round.png"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-v21_open_on_phone_animation.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-v21\\open_on_phone_animation.xml"
     },
@@ -44,12 +48,12 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout-v23_action_drawer_title_view.xml.flat",
-        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout-v23\\action_drawer_title_view.xml"
-    },
-    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout-v23_action_drawer_title_view.xml.flat",
+        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout-v23\\action_drawer_title_view.xml"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_right_round.png.flat",
@@ -76,28 +80,32 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-v21\\ic_cc_clear.xml"
     },
     {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout_data_fragment.xml.flat",
-        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\layout\\data_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout_data_fragment.xml.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\layout\\data_fragment.xml"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-v23_ic_cc_settings_button_center.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-v23\\ic_cc_settings_button_center.xml"
     },
     {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout_alert_dialog_wearable.xml.flat",
-        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout\\alert_dialog_wearable.xml"
-    },
-    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout-v20_watch_card_content.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout-v20\\watch_card_content.xml"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout_alert_dialog_wearable.xml.flat",
+        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout\\alert_dialog_wearable.xml"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_force_check_round.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-hdpi\\force_check_round.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_right_round.xml.flat",
@@ -110,6 +118,10 @@
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_force_check.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xxxhdpi\\force_check.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_left_round.png.flat",
@@ -132,20 +144,20 @@
         "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_right_round.png.flat",
-        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-hdpi\\right_round.png"
-    },
-    {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\drawable\\notification_bg_low.xml"
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_right_round.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-hdpi\\right_round.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
@@ -156,12 +168,12 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
     },
     {
-        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_black_l.png.flat",
-        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xxhdpi\\ic_black_l.png"
-    },
-    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout-v21_dismiss_overlay.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout-v21\\dismiss_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_black_l.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xxhdpi\\ic_black_l.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_split_round.png.flat",
@@ -186,6 +198,10 @@
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\color-v23_button_icon_color.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\color-v23\\button_icon_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_force_check_round.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-mdpi\\force_check_round.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-v23_ic_cc_settings_button_e.xml.flat",
@@ -280,8 +296,16 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout\\single_page_nav_drawer_3_item.xml"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_force_check_round.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xxxhdpi\\force_check_round.png"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_split.xml.flat",
         "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-anydpi-v26\\split.xml"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_force_check.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xxhdpi\\force_check.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-v23_ic_expand_less_white_22.xml.flat",
@@ -416,6 +440,10 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_force_check_round.xml.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-anydpi-v26\\force_check_round.xml"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-v23_action_item_icon_background.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-v23\\action_item_icon_background.xml"
     },
@@ -496,6 +524,10 @@
         "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xhdpi\\unite_round.png"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_force_check.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xhdpi\\force_check.png"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_card_frame_pressed.9.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-mdpi-v4\\card_frame_pressed.9.png"
     },
@@ -572,6 +604,10 @@
         "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-anydpi-v26\\backgraund_round.xml"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_force_check.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-hdpi\\force_check.png"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_card_frame.9.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-xhdpi-v4\\card_frame.9.png"
     },
@@ -590,6 +626,10 @@
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_force_check.xml.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-anydpi-v26\\force_check.xml"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_split_l.png.flat",
@@ -636,8 +676,16 @@
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\layout-v21\\overlay_confirmation.xml"
     },
     {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_force_check_round.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-xhdpi\\force_check_round.png"
+    },
+    {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_full_cancel.png.flat",
         "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\wearable-2.2.0.aar\\65306c8dd802c262ff4bc2415c35459c\\res\\drawable-hdpi-v4\\ic_full_cancel.png"
+    },
+    {
+        "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_force_check.png.flat",
+        "source": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\src\\main\\res\\mipmap-mdpi\\force_check.png"
     },
     {
         "merged": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\layout_single_page_nav_drawer_4_item.xml.flat",

@@ -1,4 +1,4 @@
-#Tue Feb 27 02:00:25 IST 2018
-base.0=C\:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\transforms\\dexMerger\\debug\\26
+#Tue Feb 27 06:07:12 IST 2018
+base.0=C\:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\transforms\\dexMerger\\debug\\64
 path.0=classes.dex
 renamed.0=classes.dex
