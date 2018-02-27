@@ -86,6 +86,7 @@ public class MainActivity extends Activity implements
     private static final String START_ACTIVITY_PATH = "/start-activity";
     private static final String COUNT_PATH = "/count";
     private static final String IMAGE_PATH = "/image";
+    private static final String CONFO_PATH = "/confo";
     private static final String IMAGE_KEY = "photo";
     private static final String COUNT_KEY = "count";
     public static final int PICK_IMAGE = 2;
@@ -127,7 +128,7 @@ public class MainActivity extends Activity implements
                 new DataItemGenerator(), 1, 5, TimeUnit.SECONDS);
 
         mStartActivityBtn.setEnabled(true);
-        mSendPhotoBtn.setEnabled(mCameraSupported);
+        //mSendPhotoBtn.setEnabled(mCameraSupported);
 
         // Instantiates clients without member variables, as clients are inexpensive to create and
         // won't lose their listeners. (They are cached and shared between GoogleApi instances.)
@@ -136,6 +137,7 @@ public class MainActivity extends Activity implements
         Wearable.getCapabilityClient(this)
                 .addListener(
                         this, Uri.parse("wear://"), CapabilityClient.FILTER_REACHABLE);
+
     }
 
     @Override
@@ -155,19 +157,6 @@ public class MainActivity extends Activity implements
             mImageBitmap = (Bitmap) extras.get("data");
             mThumbView.setImageBitmap(mImageBitmap);
         }
-        if (requestCode == PICK_IMAGE) {
-            if(resultCode == RESULT_OK) {
-                try {
-                    Uri selectedImage = data.getData();
-                    InputStream imageStream = getContentResolver().openInputStream(selectedImage);
-                    mImageBitmap = BitmapFactory.decodeStream(imageStream);
-
-                    mThumbView.setImageBitmap(mImageBitmap);
-                } catch (FileNotFoundException e) {
-
-                }
-            }
-        }
     }
 
     @Override
@@ -178,6 +167,9 @@ public class MainActivity extends Activity implements
             if (event.getType() == DataEvent.TYPE_CHANGED) {
                 mDataItemListAdapter.add(
                         new Event("DataItem Changed", event.getDataItem().toString()));
+                if(event.getDataItem().getUri().getPath() == CONFO_PATH) {
+                    
+                }
             } else if (event.getType() == DataEvent.TYPE_DELETED) {
                 mDataItemListAdapter.add(
                         new Event("DataItem Deleted", event.getDataItem().toString()));
@@ -204,7 +196,7 @@ public class MainActivity extends Activity implements
      * Sets up UI components and their callback handlers.
      */
     private void setupViews() {
-        mSendPhotoBtn = (Button) findViewById(R.id.sendPhoto);
+        //mSendPhotoBtn = (Button) findViewById(R.id.sendPhoto);
         mThumbView = (ImageView) findViewById(R.id.imageView);
         mDataItemList = (ListView) findViewById(R.id.data_item_list);
         mStartActivityBtn = findViewById(R.id.start_wearable_activity);
@@ -215,13 +207,20 @@ public class MainActivity extends Activity implements
     }
 
     public void onPickPhotoClick(View view){
-        dispatchTakePictureIntent();
+        dispatchPickPictureIntent();
     }
 
-    public void onSendPhotoClick(View view) {
-        if (null != mImageBitmap) {
-            sendPhoto(toAsset(mImageBitmap));
-        }
+    public void onSplitClick(View view) {
+        sendCommand(toAsset(), "Split");
+    }
+    public void onUniteClick(View view) {
+        sendCommand(toAsset(), "Unite");
+    }
+    public void onRightClick(View view) {
+        sendCommand(toAsset(), "Right");
+    }
+    public void onLeftClick(View view) {
+        sendCommand(toAsset(), "Left");
     }
 
     /**
@@ -264,10 +263,20 @@ public class MainActivity extends Activity implements
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
-        //Intent chooserIntent = new Intent(Intent.ACTION_PICK);
-        //chooserIntent.setType("image/*");
+    }
 
-        //startActivityForResult(chooserIntent, PICK_IMAGE);
+    private void dispatchPickPictureIntent() {
+        Intent intent = new Intent(Intent.ACTION_PICK,
+                MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+        intent.setType("image/*");
+        intent.putExtra("crop", "true");
+        intent.putExtra("scale", true);
+        intent.putExtra("outputX", 256);
+        intent.putExtra("outputY", 256);
+        intent.putExtra("aspectX", 1);
+        intent.putExtra("aspectY", 1);
+        intent.putExtra("return-data", true);
+        startActivityForResult(intent, PICK_IMAGE);
     }
 
 
@@ -277,11 +286,10 @@ public class MainActivity extends Activity implements
      * 320x320 and if you want to have zoom and parallax effect in your app, limit the size of your
      * image to 640x400. Resize your image before transferring to your wearable device.
      */
-    private static Asset toAsset(Bitmap bitmap) {
+    private static Asset toAsset() {
         ByteArrayOutputStream byteStream = null;
         try {
             byteStream = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteStream);
             return Asset.createFromBytes(byteStream.toByteArray());
         } finally {
             if (null != byteStream) {
@@ -297,10 +305,28 @@ public class MainActivity extends Activity implements
     /**
      * Sends the asset that was created from the photo we took by adding it to the Data Item store.
      */
-    private void sendPhoto(Asset asset) {
+    private void splitForce(Asset asset) {
         PutDataMapRequest dataMap = PutDataMapRequest.create(IMAGE_PATH);
         dataMap.getDataMap().putAsset(IMAGE_KEY, asset);
         dataMap.getDataMap().putLong("time", new Date().getTime());
+        dataMap.getDataMap().putString("command", "split");
+        PutDataRequest request = dataMap.asPutDataRequest();
+        request.setUrgent();
+
+        Task<DataItem> dataItemTask = Wearable.getDataClient(this).putDataItem(request);
+
+        dataItemTask.addOnSuccessListener(new OnSuccessListener<DataItem>() {
+            @Override
+            public void onSuccess(DataItem dataItem) {
+                LOGD(TAG, "Sending image was successful: " + dataItem);
+            }
+        });
+    }
+    private void sendCommand(Asset asset, String command) {
+        PutDataMapRequest dataMap = PutDataMapRequest.create(IMAGE_PATH);
+        dataMap.getDataMap().putAsset(IMAGE_KEY, asset);
+        dataMap.getDataMap().putLong("time", new Date().getTime());
+        dataMap.getDataMap().putString("command", command);
         PutDataRequest request = dataMap.asPutDataRequest();
         request.setUrgent();
 

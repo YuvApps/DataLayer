@@ -341,62 +341,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-ca_values-ca.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-ca\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "193",
-                        "endOffsets": "476"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1289",
-                        "endColumns": "193",
-                        "endOffsets": "1478"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-ca\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "281,384,568,693,800,1021,1159,1308,1441,1685,1792,1995,2137,2373,2570,2661,2755",
-                        "endColumns": "102,183,124,106,220,137,148,132,243,106,202,141,235,196,90,93,111",
-                        "endOffsets": "383,567,692,799,1020,1158,1307,1440,1684,1791,1994,2136,2372,2569,2660,2754,2866"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,212,396,525,636,857,999,1152,1483,1727,1838,2041,2187,2423,2624,2719,2817",
-                        "endColumns": "106,183,128,110,220,141,152,136,243,110,202,145,235,200,94,97,115",
-                        "endOffsets": "207,391,520,631,852,994,1147,1284,1722,1833,2036,2182,2418,2619,2714,2812,2928"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-ca\\values-ca.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2933",
-                        "endColumns": "100",
-                        "endOffsets": "3029"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-sw_values-sw.arsc.flat",
             "map": [
                 {
@@ -448,6 +392,62 @@
                         "startOffsets": "2855",
                         "endColumns": "100",
                         "endOffsets": "2951"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-ca_values-ca.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-ca\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "193",
+                        "endOffsets": "476"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1289",
+                        "endColumns": "193",
+                        "endOffsets": "1478"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-ca\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "281,384,568,693,800,1021,1159,1308,1441,1685,1792,1995,2137,2373,2570,2661,2755",
+                        "endColumns": "102,183,124,106,220,137,148,132,243,106,202,141,235,196,90,93,111",
+                        "endOffsets": "383,567,692,799,1020,1158,1307,1440,1684,1791,1994,2136,2372,2569,2660,2754,2866"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,212,396,525,636,857,999,1152,1483,1727,1838,2041,2187,2423,2624,2719,2817",
+                        "endColumns": "106,183,128,110,220,141,152,136,243,110,202,145,235,200,94,97,115",
+                        "endOffsets": "207,391,520,631,852,994,1147,1284,1722,1833,2036,2182,2418,2619,2714,2812,2928"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-ca\\values-ca.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2933",
+                        "endColumns": "100",
+                        "endOffsets": "3029"
                     }
                 }
             ]
@@ -662,62 +662,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-si_values-si.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-si\\values-si.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2784",
-                        "endColumns": "100",
-                        "endOffsets": "2880"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-si\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "281,387,573,695,806,1007,1129,1271,1394,1604,1717,1904,2033,2236,2423,2522,2609",
-                        "endColumns": "105,185,121,110,200,121,141,122,209,112,186,128,202,186,98,86,104",
-                        "endOffsets": "386,572,694,805,1006,1128,1270,1393,1603,1716,1903,2032,2235,2422,2521,2608,2713"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,215,401,527,642,843,969,1115,1440,1650,1767,1954,2087,2290,2481,2584,2675",
-                        "endColumns": "109,185,125,114,200,125,145,126,209,116,186,132,202,190,102,90,108",
-                        "endOffsets": "210,396,522,637,838,964,1110,1237,1645,1762,1949,2082,2285,2476,2579,2670,2779"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-si\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "197",
-                        "endOffsets": "480"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1242",
-                        "endColumns": "197",
-                        "endOffsets": "1435"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-it_values-it.arsc.flat",
             "map": [
                 {
@@ -788,6 +732,62 @@
                         "startOffsets": "6103",
                         "endColumns": "194",
                         "endOffsets": "6293"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-si_values-si.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-si\\values-si.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2784",
+                        "endColumns": "100",
+                        "endOffsets": "2880"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-si\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "281,387,573,695,806,1007,1129,1271,1394,1604,1717,1904,2033,2236,2423,2522,2609",
+                        "endColumns": "105,185,121,110,200,121,141,122,209,112,186,128,202,186,98,86,104",
+                        "endOffsets": "386,572,694,805,1006,1128,1270,1393,1603,1716,1903,2032,2235,2422,2521,2608,2713"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,215,401,527,642,843,969,1115,1440,1650,1767,1954,2087,2290,2481,2584,2675",
+                        "endColumns": "109,185,125,114,200,125,145,126,209,116,186,132,202,190,102,90,108",
+                        "endOffsets": "210,396,522,637,838,964,1110,1237,1645,1762,1949,2082,2285,2476,2579,2670,2779"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-si\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "197",
+                        "endOffsets": "480"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1242",
+                        "endColumns": "197",
+                        "endOffsets": "1435"
                     }
                 }
             ]
@@ -1782,6 +1782,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-bg_values-bg.arsc.flat",
             "map": [
                 {
@@ -1833,77 +1848,6 @@
                         "startOffsets": "1313",
                         "endColumns": "196",
                         "endOffsets": "1505"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-en-rIN_values-en-rIN.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-et_values-et.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-et\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "281,382,576,701,807,1016,1143,1285,1413,1632,1738,1933,2063,2277,2448,2537,2628",
-                        "endColumns": "100,193,124,105,208,126,141,127,218,105,194,129,213,170,88,90,112",
-                        "endOffsets": "381,575,700,806,1015,1142,1284,1412,1631,1737,1932,2062,2276,2447,2536,2627,2740"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,404,533,643,852,983,1129,1460,1679,1789,1984,2118,2332,2507,2600,2695",
-                        "endColumns": "104,193,128,109,208,130,145,131,218,109,194,133,213,174,92,94,116",
-                        "endOffsets": "205,399,528,638,847,978,1124,1256,1674,1784,1979,2113,2327,2502,2595,2690,2807"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-et\\values-et.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2812",
-                        "endColumns": "100",
-                        "endOffsets": "2908"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-et\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "198",
-                        "endOffsets": "481"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1261",
-                        "endColumns": "198",
-                        "endOffsets": "1455"
                     }
                 }
             ]
@@ -1979,6 +1923,62 @@
                         "startOffsets": "6193",
                         "endColumns": "223",
                         "endOffsets": "6412"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-et_values-et.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-et\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "281,382,576,701,807,1016,1143,1285,1413,1632,1738,1933,2063,2277,2448,2537,2628",
+                        "endColumns": "100,193,124,105,208,126,141,127,218,105,194,129,213,170,88,90,112",
+                        "endOffsets": "381,575,700,806,1015,1142,1284,1412,1631,1737,1932,2062,2276,2447,2536,2627,2740"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,404,533,643,852,983,1129,1460,1679,1789,1984,2118,2332,2507,2600,2695",
+                        "endColumns": "104,193,128,109,208,130,145,131,218,109,194,133,213,174,92,94,116",
+                        "endOffsets": "205,399,528,638,847,978,1124,1256,1674,1784,1979,2113,2327,2502,2595,2690,2807"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-et\\values-et.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2812",
+                        "endColumns": "100",
+                        "endOffsets": "2908"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-et\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "198",
+                        "endOffsets": "481"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1261",
+                        "endColumns": "198",
+                        "endOffsets": "1455"
                     }
                 }
             ]
@@ -2195,6 +2195,62 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-ur_values-ur.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "102",
+                        "endOffsets": "153"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2833",
+                        "endColumns": "102",
+                        "endOffsets": "2931"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-ur\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "281,387,583,707,816,1015,1140,1278,1407,1618,1726,1929,2055,2260,2455,2544,2637",
+                        "endColumns": "105,195,123,108,198,124,137,128,210,107,202,125,204,194,88,92,112",
+                        "endOffsets": "386,582,706,815,1014,1139,1277,1406,1617,1725,1928,2054,2259,2454,2543,2636,2749"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,215,411,539,652,851,980,1122,1466,1677,1789,1992,2122,2327,2526,2619,2716",
+                        "endColumns": "109,195,127,112,198,128,141,132,210,111,202,129,204,198,92,96,116",
+                        "endOffsets": "210,406,534,647,846,975,1117,1250,1672,1784,1987,2117,2322,2521,2614,2711,2828"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-ur\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "210",
+                        "endOffsets": "493"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1255",
+                        "endColumns": "210",
+                        "endOffsets": "1461"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-zh-rHK_values-zh-rHK.arsc.flat",
             "map": [
                 {
@@ -2265,62 +2321,6 @@
                         "startOffsets": "7090",
                         "endColumns": "101",
                         "endOffsets": "7187"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\yuval\\StudioProjects\\DataLayer\\Wearable\\build\\intermediates\\res\\merged\\debug\\values-ur_values-ur.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\c0bc5a113ee1a8788c7f92de5b795bf9\\res\\values-ur\\values-ur.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "102",
-                        "endOffsets": "153"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2833",
-                        "endColumns": "102",
-                        "endOffsets": "2931"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3d3295ba919458fb8fb52972e83d97ae\\res\\values-ur\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "281,387,583,707,816,1015,1140,1278,1407,1618,1726,1929,2055,2260,2455,2544,2637",
-                        "endColumns": "105,195,123,108,198,124,137,128,210,107,202,125,204,194,88,92,112",
-                        "endOffsets": "386,582,706,815,1014,1139,1277,1406,1617,1725,1928,2054,2259,2454,2543,2636,2749"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,215,411,539,652,851,980,1122,1466,1677,1789,1992,2122,2327,2526,2619,2716",
-                        "endColumns": "109,195,127,112,198,128,141,132,210,111,202,129,204,198,92,96,116",
-                        "endOffsets": "210,406,534,647,846,975,1117,1250,1672,1784,1987,2117,2322,2521,2614,2711,2828"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yuval\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.8.0.aar\\b96f2430d0481a5107e3062a2e1a02ea\\res\\values-ur\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "210",
-                        "endOffsets": "493"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1255",
-                        "endColumns": "210",
-                        "endOffsets": "1461"
                     }
                 }
             ]

@@ -1,4 +1,4 @@
-#Mon Feb 26 23:02:35 IST 2018
-base.0=C\:\\Users\\yuval\\StudioProjects\\DataLayer\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Feb 27 04:54:29 IST 2018
+base.0=C\:\\Users\\yuval\\StudioProjects\\DataLayer\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\38
 path.0=classes.dex
 renamed.0=classes.dex

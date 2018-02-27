@@ -16,6 +16,8 @@
 
 package com.example.android.wearable.datalayer;
 
+import static com.example.android.wearable.datalayer.DataLayerListenerService.IMAGE_KEY;
+import static com.example.android.wearable.datalayer.DataLayerListenerService.CONFO_PATH;
 import static com.example.android.wearable.datalayer.DataLayerListenerService.LOGD;
 
 import android.app.Activity;
@@ -48,14 +50,20 @@ import com.google.android.gms.wearable.CapabilityInfo;
 import com.google.android.gms.wearable.DataClient;
 import com.google.android.gms.wearable.DataEvent;
 import com.google.android.gms.wearable.DataEventBuffer;
+import com.google.android.gms.wearable.DataItem;
 import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.MessageClient;
 import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.Node;
+import com.google.android.gms.wearable.PutDataMapRequest;
+import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -119,22 +127,98 @@ public class MainActivity extends Activity implements
         Wearable.getCapabilityClient(this).removeListener(this);
     }
 
+    public void onConformation(View view) {
+
+        PutDataMapRequest dataMap = PutDataMapRequest.create(CONFO_PATH);
+        dataMap.getDataMap().putAsset(IMAGE_KEY, toAsset());
+        dataMap.getDataMap().putLong("time", new Date().getTime());
+        dataMap.getDataMap().putBoolean("conformation", true);
+        PutDataRequest request = dataMap.asPutDataRequest();
+        request.setUrgent();
+
+        Task<DataItem> dataItemTask = Wearable.getDataClient(this).putDataItem(request);
+
+        dataItemTask.addOnSuccessListener(new OnSuccessListener<DataItem>() {
+            @Override
+            public void onSuccess(DataItem dataItem) {
+                LOGD(TAG, "Sending image was successful: " + dataItem);
+            }
+        });
+    }
+
+    private static Asset toAsset() {
+        ByteArrayOutputStream byteStream = null;
+        try {
+            byteStream = new ByteArrayOutputStream();
+            return Asset.createFromBytes(byteStream.toByteArray());
+        } finally {
+            if (null != byteStream) {
+                try {
+                    byteStream.close();
+                } catch (IOException e) {
+                    // ignore
+                }
+            }
+        }
+    }
+
     @Override
     public void onDataChanged(DataEventBuffer dataEvents) {
         LOGD(TAG, "onDataChanged(): " + dataEvents);
 
+        moveToPage(1);
+        mAssetFragment.setBackgroundImage(BitmapFactory.decodeResource(getResources(), R.mipmap.backgraund_round));
+
         for (DataEvent event : dataEvents) {
             if (event.getType() == DataEvent.TYPE_CHANGED) {
                 String path = event.getDataItem().getUri().getPath();
-                if (DataLayerListenerService.IMAGE_PATH.equals(path)) {
+                DataMapItem dataMapItem = DataMapItem.fromDataItem(event.getDataItem());
+                String command = dataMapItem.getDataMap().getString("command");
+                //if (DataLayerListenerService.IMAGE_PATH.equals(path)) {
+                if (command != null) {
                     Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
-                    long[] vibrationPattern = {0, 500, 50, 300};
+                    long[] vibrationPattern = {0, 500, 50, 500};
+                    long[] vibrationPatternSplit = {0, 600, 200, 600};
+                    long[] vibrationPatternUnite = {0, 1000};
+                    long[] vibrationPatternRight = {0, 100, 200, 800};
+                    long[] vibrationPatternLeft = {0, 800, 200, 100};
                     //-1 - don't repeat
                     final int indexInPatternToRepeat = -1;
-                    vibrator.vibrate(vibrationPattern, indexInPatternToRepeat);
-                    DataMapItem dataMapItem = DataMapItem.fromDataItem(event.getDataItem());
+
                     Asset photoAsset = dataMapItem.getDataMap()
-                            .getAsset(DataLayerListenerService.IMAGE_KEY);
+                            .getAsset(IMAGE_KEY);
+                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.split_round);
+
+                    LOGD(TAG, "Setting background image on second page..");
+                    moveToPage(1);
+
+                    switch (command){
+                        case "Split": {
+                            bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.split_round);
+                            vibrationPattern = vibrationPatternSplit;
+                            break;
+                        }
+                        case "Unite": {
+                            bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.unite_round);
+                            vibrationPattern = vibrationPatternUnite;
+                            break;
+                        }
+                        case "Right": {
+                            bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.right_round);
+                            vibrationPattern = vibrationPatternRight;
+                            break;
+                        }
+                        case "Left": {
+                            bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.left_round);
+                            vibrationPattern = vibrationPatternLeft;
+                            break;
+                        }
+                    }
+
+                    vibrator.vibrate(vibrationPattern, indexInPatternToRepeat);
+                    mAssetFragment.setBackgroundImage(bitmap);
+
+
                     // Loads image on background thread.
                     new LoadBitmapAsyncTask().execute(photoAsset);
                     //new LoadStringAsyncTask().execute(photoAsset);
@@ -327,10 +411,12 @@ public class MainActivity extends Activity implements
             if (string != null) {
                 LOGD(TAG, "Setting background image on second page..");
                 moveToPage(1);
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.common_google_signin_btn_icon_dark);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_split_l);
                 switch (string) {
                     case ("1"):
-                        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_cc_settings_button_center);
+                        bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_split_l);
+                    case("2"):
+
                 }
 
                 mAssetFragment.setBackgroundImage(bitmap);
@@ -392,7 +478,8 @@ public class MainActivity extends Activity implements
             if (bitmap != null) {
                 LOGD(TAG, "Setting background image on second page..");
                 moveToPage(1);
-                mAssetFragment.setBackgroundImage(bitmap);
+                bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_split_l);
+                //mAssetFragment.setBackgroundImage(bitmap);
             }
         }
     }

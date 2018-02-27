@@ -26,35 +26,41 @@
         android:layout_marginTop="10dp">
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/unite"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/take_photo"
-            android:id="@+id/takePhoto"
-            android:onClick="onTakePhotoClick"
-            android:layout_marginLeft="39dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/split"
+            android:onClick="onUniteClick"
+            android:text="unite" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/split"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pick_photo"
-            android:id="@+id/pickPhoto"
-            android:onClick="onPickPhotoClick"
+            android:layout_below="@id/unite"
             android:layout_marginLeft="39dp"
-            android:layout_below="@+id/takePhoto"/>
+            android:onClick="onSplitClick"
+            android:text="split" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/right"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/send_photo"
-            android:id="@+id/sendPhoto"
-            android:layout_alignRight="@+id/pickPhoto"
+            android:layout_below="@id/split"
             android:layout_marginLeft="39dp"
-            android:enabled="false"
-            android:onClick="onSendPhotoClick"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/pickPhoto" />
+            android:onClick="onRightClick"
+            android:text="right" />
+
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/right"
+            android:layout_marginLeft="39dp"
+            android:onClick="onLeftClick"
+            android:text="left" />
 
         <ImageView
             android:layout_width="wrap_content"
